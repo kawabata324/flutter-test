@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main(){
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           ),
       body: SingleChildScrollView(
             child: Column(
-              children: [
+              children: const [
                 TweetTile(),
               ],
             ),
@@ -41,24 +41,24 @@ class TweetTile extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CircleAvatar(
+          const CircleAvatar(
             backgroundImage: NetworkImage('https://ichigoproduction.com/core_sys/images/contents/00000048/block/00000173/00000214.jpg?1685003920'),
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
-                children: [
+                children: const [
                   Text('kawabata'),
                   SizedBox(width: 8),
                   Text('2023/05/28'),
                 ]
                 ),
-                SizedBox(height: 8,),
-                Text('Flutter始めました'),
+                const SizedBox(height: 8,),
+                const Text('Flutter始めました'),
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.favorite_border),
+                  icon: const Icon(Icons.favorite_border),
                   )
             ],
           ),
